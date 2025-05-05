@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Types of Triangle, with PHP" />
+  <meta name="description" content="Multiply Numbers, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Shanea Jaromay" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Types of Triangle, with PHP</title>
+  <title>Multiply Numbers, in PHP</title>
 </head>
 
 
@@ -24,7 +24,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Types of Triangle, with PHP</span>
+        <span class="mdl-layout-title">Multiply Numbers, in PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
@@ -35,48 +35,15 @@
         <div id="answer">
           <?php
           // input
-          $sideA = $_GET["side-a"];
-          $sideB = $_GET["side-b"];
-          $sideC = $_GET["side-c"];
+          $counter = 0;
+          $answer = 0;
+          $numberOne = $_GET['number-one'];
+          $numberTwo = $_GET['number-two'];
 
-
-          // using the cosine law
-          $angleA = acos(($sideB ** 2 + $sideC ** 2 - $sideA ** 2) / (2 * $sideB * $sideC)) *
-            (180 / M_PI);
-          $angleB = acos(($sideC ** 2 + $sideA ** 2 - $sideB ** 2) / (2 * $sideC * $sideA)) *
-            (180 / M_PI);
-          $angleC = acos(($sideA ** 2 + $sideB ** 2 - $sideC ** 2) / (2 * $sideA * $sideB)) *
-            (180 / M_PI);
-
-          $sumOfAngles = round($angleA, 2) + round($angleB, 2) + round($angleC, 2);
-
-          if ($sumOfAngles == 180) {
-            // process
-            if ($sideA == $sideB && $sideA == $sideC && $sideB == $sideC) {
-              // output
-              echo 'If your sides are: ' .
-                'Side a = ' . $sideA . ', ' .
-                'Side b = ' . $sideB . ', and' .
-                'Side c = ' . $sideC .
-                ', This is an Equilateral Triangle.';
-            } else if ($sideA === $sideC || $sideA === $sideB || $sideB === $sideC) {
-              // output
-              echo 'If your sides are: ' .
-                'Side a = ' . $sideA . ', ' .
-                'Side b = ' . $sideB . ', and' .
-                'Side c = ' . $sideC .
-                ', This is an Isosceles Triangle.';
-            } else {
-              // output
-              echo 'If your sides are: ' .
-                'Side a = ' . $sideA . ', ' .
-                'Side b = ' . $sideB . ', and' .
-                'Side c = ' . $sideC .
-                ', This is a Scalene Triangle.';
-            }
-          } else {
-            // output
-            echo 'This is not a triangle.';
+          //process
+          while ($counter < $numberTwo ) {
+            $counter = $counter + 1;
+            $answer = $answer + $numberOne;
           }
           ?>
         </div>

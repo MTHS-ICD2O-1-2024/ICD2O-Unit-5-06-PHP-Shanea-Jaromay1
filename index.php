@@ -37,15 +37,14 @@
         <form action="./answer.php" method="GET">
           <label>Number: </label>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="user-number" />
-            <label class="mdl-textfield__label" for="user-number">Enter number...</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="number-one" />
+            <label class="mdl-textfield__label" for="number-one">First number here...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
-          <br />
-          <label>Number: </label>
+          <label> X </label>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="user-number" />
-            <label class="mdl-textfield__label" for="user-number">Enter number...</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="number-two" />
+            <label class="mdl-textfield__label" for="number-two">First number here...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
