@@ -29,7 +29,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/Untitled.png" alt="Triangles image" width="500" />
+        <img src="./images/multiplication table.jpg" alt="Triangles image" width="500" />
       </div>
       <div class="page-content-answer">
         <div id="answer">
@@ -45,6 +45,9 @@
             $counter = $counter + 1;
             $answer = $answer + $numberOne;
           }
+
+          //output
+          echo 'Your answer is: ' . $answer . ' because your numbers are: ' . $numberOne . ' and ' . $numberTwo . '.'
           ?>
         </div>
       </div>
